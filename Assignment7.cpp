@@ -13,21 +13,22 @@ Other Sources:
 Creation Date: 11/18/25 - ASDFASDF
 */
 
-//headers for accessing sql server
-#include <jdbc/mysql_driver.h>
-#include <jdbc/mysql_connection.h>
-#include <jdbc/cppconn/statement.h>
-#include <jdbc/cppconn/resultset.h>
-#include <jdbc/cppconn/exception.h>
+// MySQL Connector/C++ (legacy API) headers
+#include <mysql_driver.h>
+#include <mysql_connection.h>
 
+#include <cppconn/driver.h>
+#include <cppconn/exception.h>
+#include <cppconn/resultset.h>
+#include <cppconn/statement.h>
 
-
-
-//other headers for helpful things
+// Other headers
 #include <string>
 #include <fstream>
+#include <iostream>
 
-using namespace std;    //for namespace
+using namespace std;
+
 
 
 
